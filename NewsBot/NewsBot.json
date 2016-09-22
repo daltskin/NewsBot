@@ -1,0 +1,394 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "NewsBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "NewsSubject"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "RepeatLastSubject"
+    },
+    {
+      "name": "WhatsHappening"
+    }
+  ],
+  "entities": [
+    {
+      "name": "SubjectTitle"
+    }
+  ],
+  "composites": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "what news have i already seen?",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "last search",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "whats going on with politics",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "show me news for technology",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what's happening with apple?",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "last subject",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "what was the last one?",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "whats going on in the world?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "whats the latest news?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "show me the news",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "show me news articles",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "show me the latest news",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "what have i already searched?",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "apple",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "whats happening?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "whats going down?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "microsoft",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "technology",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "whats happening in england?",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's happening in the us?",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "whats happening in europe?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "whats happening with brexit?",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "show me news for brexit",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "brexit",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "what's going on in uk?",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "whats happening in the world?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "repeat last search",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "latest news",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "what did i last search for?",
+      "intent": "RepeatLastSubject",
+      "entities": []
+    },
+    {
+      "text": "latest england news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "latest berkshire news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "berkshire news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "berkshire stories",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "hampshire stories",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 0,
+          "endPos": 0
+        }
+      ]
+    },
+    {
+      "text": "london news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "show me the latest news on england",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "latest uk news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "england news",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "news for england",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "show me news for hornets",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+ 
+    {
+      "text": "show me the latest news for apple",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what is the latest microsoft news?",
+      "intent": "NewsSubject",
+      "entities": []
+    },
+    {
+      "text": "latest news for europe",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "show me the current news for ikea",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what is the current news?",
+      "intent": "WhatsHappening",
+      "entities": []
+    },
+    {
+      "text": "current news for england",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "whats going on in england?",
+      "intent": "NewsSubject",
+      "entities": [
+        {
+          "entity": "SubjectTitle",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}
